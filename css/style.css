@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.hero-image {
+  background-image: url("../assets/laycon-min.jpeg");
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+.hero__btn {
+  width: 200px;
+  height: 40px;
+  background-color: #9c9987;
+  outline: none;
+}
+
+.hero__btn:hover {
+  opacity: .6;
+}
+
+.watch {
+  color: #FFFFFF;
+  background-color: #9c9987;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 800;
+}
