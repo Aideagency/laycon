@@ -171,7 +171,7 @@ nav {
   margin: 0 auto;
 }
 .menu__item:hover {
-  background-color: #cfd8dc;
+  opacity: .5;
 }
 
 .footer{
@@ -217,4 +217,56 @@ nav {
 
 .bg-4 {
   background-image: url("../assets/PSX2-min.jpg");
+}
+
+
+/* music page */
+.music-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));;
+  grid-auto-rows: auto;
+  grid-row-gap: 5rem;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+.music-card{
+  position: relative;
+  width: 280px;
+  height: 280px;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+.music-cover {
+  width: 280px;
+  height: 280px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.music-card:hover .overlay {
+  opacity: 1;
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
